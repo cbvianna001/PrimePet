@@ -10,34 +10,26 @@
         
         img { max-width: 100%; height: auto; }
 
+        /* Menu Fixo */
         nav { background: var(--dark); color: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; }
         nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
         
+        /* Cabeçalho */
         header { background-color: var(--primary); padding: 15px; text-align: center; }
         .logo-img { max-width: 150px; display: block; margin: 0 auto; }
         
+        /* Botão Instagram */
         .btn-insta { display: inline-block; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; padding: 8px 16px; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 10px; font-size: 0.9em; }
         
         .container { max-width: 900px; margin: auto; padding: 20px; }
         
-        .grid-images { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-            gap: 15px; 
-            margin-top: 20px; 
-        }
+        /* Vitrine */
+        .grid-images { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px; }
+        .img-item { width: 100%; height: 250px; object-fit: contain; background-color: #f4f4f4; border-radius: 10px; border: 2px solid #ddd; display: block; }
         
-        .img-item { 
-            width: 100%; 
-            height: 250px; 
-            object-fit: contain; /* Imagem inteira, sem cortes */
-            background-color: #f4f4f4; 
-            border-radius: 10px; 
-            border: 2px solid #ddd; 
-            display: block;
-        }
-        
+        /* Botões */
         .btn-whats { display: inline-block; background-color: #25d366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 5px; }
+        .btn-maps { display: inline-block; background-color: #4285f4; color: white; padding: 10px 20px; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 5px; }
         
         footer { background-color: var(--dark); color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; }
     </style>
@@ -47,6 +39,7 @@
     <nav>
         <a href="#delivery">Delivery</a>
         <a href="#produtos">Vitrine</a>
+        <a href="#localizacao">Localização</a>
         <a href="#contato">Contato</a>
     </nav>
 
@@ -72,6 +65,26 @@
                 <img src="img-2.jpg" alt="Produto 2" class="img-item">
                 <img src="img-3.jpg" alt="Produto 3" class="img-item">
                 <img src="img-4.jpg" alt="Produto 4" class="img-item">
+            </div>
+        </section>
+
+        <section id="localizacao" style="text-align:center; margin-top: 40px;">
+            <h2 style="color: var(--primary);">Onde estamos localizados</h2>
+            <p>Clique abaixo para abrir o mapa da unidade:</p>
+            
+            <div style="margin-bottom: 20px;">
+                <strong>Jd. Souto</strong><br>
+                <a href="https://share.google/zT8WH9r8KjcORJWri" class="btn-maps" target="_blank">Ver no Google Maps</a>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <strong>Res. Flamboyant</strong><br>
+                <a href="https://share.google/AOM0WZ36IyujjFpi2" class="btn-maps" target="_blank">Ver no Google Maps</a>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+                <strong>Res. São Francisco</strong><br>
+                <a href="https://share.google/sPe91BEAWyoXIBWmt" class="btn-maps" target="_blank">Ver no Google Maps</a>
             </div>
         </section>
     </div>
